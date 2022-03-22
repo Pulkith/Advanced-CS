@@ -1,0 +1,23 @@
+
+public class
+Min
+Heap
+Generic
+<T extends Comparable<T>>
+//must have Comparable elements
+{
+private T[] heap
+;
+//other variables not shown
+public
+Min
+Heap
+Generic
+()
+{
+//cast required, can't make a T[] directly
+// as it's not known at
+runtime what T will be
+this.
+heap = (T[]) new Comparable[DEFAULT_CAPACITY];
+}
